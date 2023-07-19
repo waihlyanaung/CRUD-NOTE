@@ -1,0 +1,55 @@
+// create logout bottom
+
+
+//2binding api
+// logout: builder.mutation({
+//     query: (token) => ({
+//       url: "/user-logout",
+//       method: "POST",
+//       headers: { authorization: `Bearer ${token}` },
+//     }),
+//     invalidatesTags: ["authApi"],
+//   }),
+
+// 3 install js cookie
+
+// addUser: (state, action) => {
+//     // console.log(action.payload);
+    
+//     (state.user = action.payload.user);
+//     (state.token = action.payload.token);
+//     Cookies.set("user",JSON.stringify(state.user)),
+//     Cookies.set("token",(state.token))
+// },
+
+//recall api and cookie
+// const [logout]=useLogoutMutation();
+// const token = Cookies.get('token')
+
+// method of remove cookie
+// 1
+//  removeUser: (state) =>{
+//     state.user =null,
+//     state.token=null
+//     Cookies.remove("user")
+//     Cookies.remove("token")
+// },
+
+// const user = JSON.parse(Cookies.get("user"));
+//   const [logoutAccount] = useLogoutAccountMutation();
+//   const token = Cookies.get('token')
+//   const dispatch = useDispatch()
+//   const nav = useNavigate()
+
+//   const logoutHandler = async () => {
+//     const { data } = await logoutAccount(token);
+//     // console.log(data)
+
+//     if (data?.success) {
+//       dispatch(removeUser());
+//       nav("/login");
+//     }
+//   };
+
+
+// onClick={logoutHandler}

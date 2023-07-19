@@ -1,0 +1,50 @@
+//to get update contact pages
+
+// const nav=useNavigate();
+// <p className='cursor-pointer' onClick={() => nav(`/edit/${contact.id}`)}>edit</p>
+
+//<Route path='/edit/:id' element={<UpdateContact/>} />
+
+//api binding[export=>useupdateContact]
+// updateContact: builder.mutation({
+//     query: ({token,newData }) => ({
+//       url: `/contact/${newData.id}`,
+//       method: "PUT",
+//       body: newData,
+//       headers: { authorization: `Bearer ${token}` },
+//     }),
+//     invalidatesTags: ["contact"],
+//   }),
+
+//api and data and id callig[import=>useParams,Cookies,useSingleContactQuery,useUpdateContactMutation]
+// const { id } = useParams();
+//     const token = Cookies.get("token");
+//     const { data } = useSingleContactQuery({ token, id });
+//     const [updateContact] = useUpdateContactMutation();
+//     console.log(data);
+
+//to see data update form
+// defaultValue={data?.contact?.name}
+
+//to see updated data
+// const [name, setName] = useState("");
+// const [phone, setPhone] = useState("");
+// const [email, setEmail] = useState("");
+
+// useEffect(() => {
+//     if (data) {
+//       setName(data?.contact?.name);
+//       setEmail(data.contact.email);
+//       setPhone(data.contact.phone);
+//     }
+//   }, [data]);
+
+// const submitHandler = async (e) => {
+//     e.preventDefault();
+//     // console.log(name, email, phone);
+//     const newData = { id: data?.contact?.id, name, phone, email, address };
+//     const { data: updatedData } = await updateContact({ token, newData });
+//     console.log(updatedData);     
+//   };
+
+//onChange={(e) => setName(e.target.value)}

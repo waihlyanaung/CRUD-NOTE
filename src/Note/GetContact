@@ -1,0 +1,37 @@
+//1write table form
+
+// 2api binding  [export=>usegetContactsQuery]
+// getContacts: builder.query({
+//     query: (token) => ({
+//       url: "/contact",
+//       headers: { authorization: `Bearer ${token}` },
+//     }),
+//     providesTags: ["contact"],
+//   }),
+
+// 3 store api   [import=>contactApi]
+//  [contactApi.reducerPath]: contactApi.reducer,
+// contactApi.middleware
+
+// 4 calling api and token [import=>cookie,usegetContactsQuery]
+// const token = Cookies.get("token");
+// const { data } = useGetContactsQuery(token);
+
+//5 describe data
+{/* <tbody>
+{data?.contacts?.data.map(
+    (contact) => {
+        return (
+            <tr key={contact?.id}>
+                <td>{contact.name}</td>
+                <td>{contact.phone}</td>
+                <td>{contact.email}</td>
+                <td>  {contact.address}</td>  
+                
+                  
+                
+            </tr>
+        )
+    }
+)}
+</tbody> */}

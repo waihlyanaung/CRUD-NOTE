@@ -1,0 +1,36 @@
+// to get creatcontact page
+//Createcontact pages
+
+// <Route path='/createcontact' element={<CreateContact/>} />
+
+//   const nav = useNavigate()
+// onClick={() => nav('/createcontact')}
+
+// create form martine[ install martine form ,import=>form]
+
+//api binding[export=>useCreateContactMutation]
+<!-- createContact: builder.mutation({
+    query: ({ data, token }) => ({
+      url: "/contact",
+      method: "POST",
+      body: data,
+      headers: { authorization: `Bearer ${token}` },
+    }),
+    invalidatesTags: ["contact"],
+  }), -->
+
+  //api and token calling[import=>useCreateContactMutation,Cookies]
+  <!-- const [createContact] = useCreateContactMutation(); -->
+  <!-- const token = Cookies.get("token") -->
+
+   //form onSubmit and type="submit" at createbottom 
+   <!-- <form onSubmit={form.onSubmit(async (values) => {
+    const data = await createContact({ token, data: values });
+    console.log(data);
+  })}> -->
+ 
+  <!-- <Button  type="submit" >
+    Create
+  </Button> -->
+    
+   </form>
